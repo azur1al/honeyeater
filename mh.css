@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Georgia;
+  src: url(./fonts/PerfectGirl-SansSerif.otf);
+}
+
+@font-face {
+  font-family: 'Text';
+  src: url(./fonts/oldstyle.ttf);
+}
+
+body {
+  font-family: 'Text';
+  font-weight: normal;
+  text-align: left;
+  font-size: 18;
+  color:rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-image: url(./images/background.jpg);
+  background-size: 100%;
+} 
+
+p {
+  text-align: justify;
+  font-family: 'Text';
+}
+
+/* left headings */
+h2{
+  font-family: Georgia;
+  font-weight: normal;
+  font-size: 50;
+  text-align: center;
+}
+
+/* right headings */
+h3{
+  font-family: Georgia;
+  font-weight: normal;
+  font-size: 35;
+  text-align: center;
+}
+
+/* right subtitles */
+h4{
+  font-family: Georgia;
+  font-weight: normal;
+  text-align: center;
+  font-size: 28;
+}
+
+h5{
+  font-family: 'Text';
+  font-weight: normal;
+  text-align: center;
+  font-size: 18;
+}
+
+/* link formatting */
+#leftlink a {
+  color: black;
+}
+
+#rightlink a {
+  color: black;
+}
+
+/* Left side - Profile and Bio */
+.leftcolumn {
+  float: left;
+  width: 30%;
+  text-align: center;
+}
+
+/* right column */
+.rightcolumn {
+  float: right;
+  width: 70%;
+  padding-left: 20px;
+}
+
+/* left column boxes */
+.cardleft {
+  color: black;
+  padding: 20px;
+  margin-bottom: 20px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+/* right column boxes */
+.cardright {
+  color:black;
+  padding: 20px;
+  margin-bottom: 20px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+/* clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* comment boxes */
+.comment-box,
+.post-comment .list {
+  background: rgba(204, 204, 204, 0.1);
+  font-family: 'Times New Roman';
+  font-weight: normal;
+  text-align: left;
+  color: black;
+}
+
+.comment-session {
+  width: auto;
+  height: auto;
+  margin: auto;
+}
+
+.post-comment .list {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.post-comment .comment-post {
+  padding: 15px 15px 15px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: rgba(178, 178, 178, 0.0);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Responsive layout */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
