@@ -21,7 +21,7 @@ body {
 
 /* Header/Blog Title */
 .header {
-  font-family: Arial;
+  font-family: 'Times New Roman';
 }
 
 h2{
@@ -29,6 +29,7 @@ h2{
   font-weight: normal;
   font-size: 30;
   text-align: center;
+  color: #F2F2F2;
   text-shadow: 2px 2px #7BAAD8;
 }
 
